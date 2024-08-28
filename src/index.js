@@ -16,7 +16,7 @@ const httpsAgent = new https.Agent({
 app.use(morgan('dev'));
 
 app.use('/', createProxyMiddleware({
-    target: 'https://google.com',
+    target: 'https://play.geforcenow.com/mall/',
     changeOrigin: true,
     secure: true,
     agent: httpsAgent,
